@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style11.css">
+    <title>Love</title>
+</head>
+<body class="body">
+        <button id="heading" onclick = "fun()"><h1>❤️Test your love score❤️</h1></button>
+<script>
+ function fun() {
+var a = prompt("Enter your name");
+var b = prompt("Enter your crush's name");
+var lovescore = Math.floor((Math.random()*100))+1;
+if(lovescore > 70){
+  alert("You love score is "+lovescore+"% 💕Your love is like Romeo and juliet💕");  
+}
+if(lovescore>50 && lovescore<=70){
+alert("You love score is "+lovescore+"% your love is like 😻Tom and Jerry🐭 ");
+}
+if(lovescore>30 && lovescore<=50){
+alert("You love score is "+lovescore+"% your love is like oil and water🥂");
+}
+if(lovescore<=30){
+    alert("You love score is "+lovescore+"% 👻 Don't fall into a trap 👻");
+}
+}
+        </script>
+</body>
+</html>
