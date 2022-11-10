@@ -10,10 +10,10 @@
         <button id="heading" onclick = "fun()"><h1>❤️Test your love score❤️</h1></button>
 <script>
  function fun() {
-var a = prompt("Enter your name");
-if(a != ""){
+  var a = prompt("Enter your name");
+if(a != null && a != ""){
 var b = prompt("Enter your crush's name");
-if(a!="" && b!=""){
+if(a != "" && b != "" && b!= null){
 var lovescore = Math.floor((Math.random()*100))+1;
 if(lovescore > 70){
   alert("You love score is "+lovescore+"% 💕Your love is like Romeo and juliet💕");  
@@ -28,10 +28,9 @@ if(lovescore<=30){
     alert("You love score is "+lovescore+"% 👻 Don't fall into a trap 👻");
 }
 }}
-else if(a == "" || b == ""){
+else{
 alert("Pls Enter the name");
-}
-}
+}}
         </script>
 </body>
 </html>
