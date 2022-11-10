@@ -11,7 +11,9 @@
 <script>
  function fun() {
 var a = prompt("Enter your name");
+if(a != ""){
 var b = prompt("Enter your crush's name");
+if(a!="" && b!=""){
 var lovescore = Math.floor((Math.random()*100))+1;
 if(lovescore > 70){
   alert("You love score is "+lovescore+"% 💕Your love is like Romeo and juliet💕");  
@@ -24,6 +26,10 @@ alert("You love score is "+lovescore+"% your love is like oil and water🥂");
 }
 if(lovescore<=30){
     alert("You love score is "+lovescore+"% 👻 Don't fall into a trap 👻");
+}
+}}
+else if(a == "" || b == ""){
+alert("Pls Enter the name");
 }
 }
         </script>
