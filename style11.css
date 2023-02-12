@@ -32,3 +32,12 @@ h1{
 #heading:hover{
     box-shadow: inset 600px 0 0 0 #fd8c8c;
 }
+.scr{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 10px;
+    padding: 13px;
+    color: #5e0000;
+    text-decoration: none;
+    font-size: 1.3em;
+}
