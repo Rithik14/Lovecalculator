@@ -8,11 +8,12 @@
   }
 .body{
     background-image: url(./heartbackground.gif);
-
+    text-align: center;
+    overflow:hidden;
 }
 h1{
     font-family: 'Great Vibes', cursive;
-    color: rgb(82, 4, 4);
+    color: rgb(117, 16, 16);
     font-size: 40px;
 }
 #heading{
@@ -37,7 +38,145 @@ h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-radius: 10px;
     padding: 13px;
-    color: #5e0000;
+    color: #e87373;
     text-decoration: none;
     font-size: 1.3em;
+}
+.container{
+    background-color: rgba(249, 218, 218, 0.5) !important;
+    color: #fff;
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top:10;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 20px;
+   }
+.content{
+        background-color: rgba(254, 219, 219, 0.5) !important;
+        color: #fff;
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 20px;
+        box-shadow: 0 0 10px #ffa2a2;
+       }
+.input1{
+    outline: none;
+    padding: 1em;
+    border-radius: 10px;
+    background-color: #ffd0d0;
+    color: #c01a1a;
+    border: none;
+}
+.input1:focus{
+    box-shadow: 0 0 10px #c15950;
+}
+.input2{
+    outline: none;
+    padding: 1em;
+    border-radius: 10px;
+    background-color: #ffd0d0;
+    border: none;
+    color: #c01a1a;
+    border-color: #5e0000;
+}
+.input2:focus{
+    box-shadow: 0 0 10px #c15950;
+}
+::placeholder{
+    color: #ce3f3f;
+}
+button{
+    padding: 1em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    border-radius: 20px;
+    border: none;
+    color: #ffd9d9;
+    background-color: #ce2828;
+}
+.subbtn{
+    font-size: 15px;
+}
+.subbtn:hover{
+    background-color: #a80909;
+    font-size: 15px;
+}
+#result{
+    color: #5e0000;
+}
+.content2{
+    color: #fff;
+    width: 355px;
+    height: 100px;
+    position: absolute;
+    top: 40%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 20px;
+}
+@media (max-width: 920px) {
+    * {
+        /* Deault CSS on all Elements */
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: "San Francisco", arial, sans-serif;
+      }
+
+    .container{
+        background-color: rgba(249, 218, 218, 0.5) !important;
+        color: #fff;
+        width: 400px;
+        height: 600px;
+        position: absolute;
+        top:20;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 20px;
+       }
+    .content{
+            background-color: rgba(254, 219, 219, 0.5) !important;
+            color: #fff;
+            width: 300px;
+            height: 400px;
+            position: absolute;
+            top:0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border-radius: 20px;
+            box-shadow: 0 0 10px #ffa2a2;
+           }
+           .content2{
+            color: #fff;
+            width: 260px;
+            height: 100px;
+            position: absolute;
+            top: 50%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border-radius: 20px;
+        }
+        #result{
+            color: #5e0000;
+            font-size: 15px;
+        }
+        
 }

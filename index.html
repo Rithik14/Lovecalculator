@@ -1,39 +1,114 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style11.css">
-    <title>Love</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=400; user-scalable=0;" />
+  
+  <title>Document</title>
+  <link rel="stylesheet" href="style11.css">  
 </head>
-<body class="body">
-        <button id="heading" onclick = "fun()"><h1>❤️Test your love score❤️</h1></button>
-        <br><br><br>
-        <div class="scr"><h2>Your Score: NaN%</h2></div>
-<script>
- function fun() {
-  var a = prompt("Enter your name");
-  var c = a.toUpperCase();
-if(c != null && c != "" && c != "RITHIK" && c!="RITHIK K"){
-var b = prompt("Enter your crush's name");
-if(a != "" && b != "" && b!= null){
-var lovescore = Math.floor((Math.random()*100))+1;
-if(lovescore > 70){
-  document.querySelector("h2").innerHTML="You love score is "+lovescore+"% 💕Your love is like Romeo and juliet💕";  
-}
-if(lovescore>50 && lovescore<=70){
-  document.querySelector("h2").innerHTML="You love score is "+lovescore+"% your love is like 😻Tom and Jerry🐭 ";
-}
-if(lovescore>30 && lovescore<=50){
-  document.querySelector("h2").innerHTML="You love score is "+lovescore+"% 🍶your love is like oil and water🍾";
-}
-if(lovescore<=30){
-  document.querySelector("h2").innerHTML="You love score is "+lovescore+"% 👻 Don't fall into a trap 👻";
-}
-}}
-else{
-alert("Pls Enter the name");
-}}
-        </script>
-</body>
-</html>
+
+<body class="body"> 
+ 
+<div class="container"> 
+  <br>
+  <br>
+  <h1>Love calculator💕</h1>
+<div class = "content">
+  
+  <br>
+  <br>
+  <input type="text" class="input1" id="firstname" placeholder="Your Name*">
+  <br>
+  <br>
+  <br>
+  <input type="text" class="input2" id="secondname" placeholder="Crush Name*">
+  <br>
+  <br>
+  <br>
+  <button type="submit" class="subbtn" value="Calculate" onclick="calculateLove()"><b>Enter</b></button>
+  <br>
+  <br>
+  </div>
+  <div class="content2"><h2 id="result"  type="text" ></h2></div>
+    </div>
+      <script type="text/javascript">  
+    function calculateLove()  
+    {  
+        Fname = document.getElementById('firstname').value.toUpperCase();
+        if(Fname != null && Fname != "" && Fname != "RITHIK" && Fname!="RITHIK K"){  
+        FnameLength = Fname.length;  
+        }else{
+          document.getElementById("result").innerHTML="You love score is "+Total+"% 👻 Don't try to fool me 👻";
+        }
+        Sname = document.getElementById('secondname').value.toUpperCase();  
+        if(Sname != null && Sname != "" && Sname != "RITHIK" && Sname!="RITHIK K"){ 
+        SnameLength = Sname.length; 
+        }else{
+          document.getElementById("result").innerHTML="You love score is "+Total+"% 👻 Don't try to fool me 👻";
+        } 
+         
+        var lovecount=0;  
+        for(var i=0;i<FnameLength;i++)  
+        {  
+            var L1=Fname.substring(i,i+1);  
+            if(L1=='A') lovecount +=3;  
+            if(L1=='E') lovecount +=3;  
+            if(L1=='I') lovecount +=3;  
+            if(L1=='O') lovecount +=3;  
+            if(L1=='U') lovecount +=4;  
+            if(L1=='L') lovecount +=1;          
+            if(L1=='V') lovecount +=4;            
+        }  
+   
+            for (var count = 0; count < SnameLength; count++)  
+            {  
+               var L2 = Sname.substring(count, count + 1);  
+                if(L2=='A') lovecount +=3;  
+                if(L2=='E') lovecount +=3;  
+                if(L2=='I') lovecount +=3;  
+                if(L2=='L') lovecount +=3;  
+                if(L2=='O') lovecount +=4;  
+                if(L2=='V') lovecount +=1;          
+                if(L2=='E') lovecount +=4;  
+            }  
+            var Total = 0;  
+            if (lovecount > 0) Total = 5 - ((FnameLength + SnameLength) / 2)  
+            if (lovecount > 2) Total = 10 - ((FnameLength + SnameLength) / 2)  
+            if (lovecount > 4) Total = 20 - ((FnameLength + SnameLength) / 2)  
+            if (lovecount > 6) Total = 30 - ((FnameLength + SnameLength) / 2)  
+            if (lovecount > 8) Total = 40 - ((FnameLength + SnameLength) / 2)  
+   
+            if (lovecount > 10) Total = 50 - ((FnameLength + SnameLength) / 2)  
+   
+            if (lovecount > 12) Total = 60 - ((FnameLength + SnameLength) / 2)  
+            if (lovecount > 14) Total = 70 - ((FnameLength + SnameLength) / 2)  
+            if (lovecount > 16) Total = 80 - ((FnameLength + SnameLength) / 2)  
+            if (lovecount > 18) Total = 90 - ((FnameLength + SnameLength) / 2)  
+            if (lovecount > 20) Total = 100 - ((FnameLength + SnameLength) / 2)  
+            if (lovecount > 22) Total = 110 - ((FnameLength + SnameLength) / 2)  
+            if (FnameLength == 0 || SnameLength == 0)  
+                Total = "Error";  
+            if (Total < 0) Total = 0;  
+            if (Total > 99) Total = 99;  
+   
+
+          if(Total > 70){
+            document.getElementById("result").innerHTML="You love score is "+Total+"% 💕Your love is like Romeo and juliet💕";  
+          }
+          if(Total>50 && Total<=70){
+            document.getElementById("result").innerHTML="You love score is "+Total+"% your love is like 😻Tom and Jerry🐭 ";
+          }
+          if(Total>30 && Total<=50){
+            document.getElementById("result").innerHTML="You love score is "+Total+"% 🍶your love is like oil and water🍾";
+          }
+          if(Total<=30){
+            document.getElementById("result").innerHTML="You love score is "+Total+"% 👻 Don't fall into a trap 👻";
+          }
+            console.log(Total);
+        }  
+        </script>   
+</body>  
+</html> 
+
+
