@@ -5,7 +5,7 @@ It provides successful relationship result from 0% to 100% , Want to know what t
 
 
 ### 2. Demo
-<img style="width:40%" src="./demo.gif" />
+<img style="width:100%" src="./demo.gif" />
 
 ### 3. Disclaimer 
 Don't take this result seriously otherwise you can get screwed up!
